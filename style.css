@@ -34,6 +34,9 @@ body {
     font-family: 'Tahoma';
     cursor: pointer;
 }
+.headeritemimg{
+    display: none;
+}
 .headeritem:hover {
     color: #70288b;
 }
@@ -212,6 +215,19 @@ body {
     position: sticky;
     bottom: 0px;
 }
+.headeritemimg {
+    background: none;
+}
+.headeritemimg input {
+  width: 100%;
+  height: 25px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
 @media (max-width: 1200px) {
     .container{
         width: 100vw;
@@ -248,6 +264,12 @@ body {
     .footeritemtext{
         display: none;
     }
+    .headeritemimg{
+        display: block;
+    }
+    .headeritemtext{
+        display: none;
+    }
 }
 
 @media (min-width: 672px) {
@@ -255,6 +277,12 @@ body {
         display: none;
     }
     .footeritemtext{
+        display: block;
+    }
+    .headeritemimg{
+        display: none;
+    }
+    .headeritemtext{
         display: block;
     }
 }
