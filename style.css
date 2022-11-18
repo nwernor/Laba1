@@ -18,7 +18,7 @@ body {
     padding: 15px;
     background-color: #a8c295;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     border-top:dashed;
     border-bottom: dashed;
@@ -28,16 +28,9 @@ body {
 }
 .headeritem{
     color: black;
+    display: block;
     text-decoration: none;
-    margin-right: 200px;
-    font-size: 18px;
-    font-family: 'Tahoma';
-    cursor: pointer;
-}
-.headeritemlast {
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
+    font-size: calc(0.5rem + 1vw);
     font-family: 'Tahoma';
     cursor: pointer;
 }
@@ -92,7 +85,7 @@ body {
     line-height: 1.3rem;
     padding-top: 3px;
     padding-bottom: 3px;
-
+    font-size: 18px;
 }
 .reaction{
     margin-left: 70px;
@@ -192,7 +185,7 @@ body {
     padding: 15px;
     background-color: #a8c295;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     border-top:dashed;
     border-bottom: dashed;
@@ -201,8 +194,7 @@ body {
     border-top-right-radius: 10px;
 }
 .footeritem{
-    margin-right: 150px;
-    font-size: 18px;
+    font-size: calc(0.5rem + 1vw);
     font-family: 'Tahoma';
     cursor: pointer;
     text-decoration: none;
@@ -211,9 +203,58 @@ body {
 .footeritem:hover {
     color: #70288b;
 }
+.footeritemimg{
+    display: none;
+}
 .container3{
     margin: auto;
     width: 1100px;
     position: sticky;
     bottom: 0px;
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 100vw;
+    }
+    .container2{
+        width: 100vw;
+    }
+    .container3 {
+        width: 100vw;
+    }
+    .header{
+        width: calc(100vw - 30px);
+    }
+    .post1{
+        width: calc(100vw - 20px);
+        border-left: none;
+        border-right: none;
+    }
+    .post2{
+        width: calc(100vw - 20px);
+        border-left: none;
+        border-right: none;
+    }
+    .rightcolumn{
+        display: none;
+
+    }
+    .footer {
+        width: calc(100vw - 30px);
+    }
+    .footeritemimg{
+        display: block;
+    }
+    .footeritemtext{
+        display: none;
+    }
+}
+
+@media (min-width: 672px) {
+    .footeritemimg{
+        display: none;
+    }
+    .footeritemtext{
+        display: block;
+    }
 }
