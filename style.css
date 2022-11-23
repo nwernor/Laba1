@@ -134,11 +134,11 @@ body {
     border-radius: 50%;
 }
 
-.emotion1 img:hover {
-    background-color: #8e87bd;
+.emotion1:hover {
+    background-color: #dc4747;
     border-radius: 50%;
 }
-.emotion2 img:hover {
+.emotion2:hover {
     background-color:#81ae6a;
     border-radius: 50%;
 }
